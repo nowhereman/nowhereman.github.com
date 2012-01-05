@@ -1,4 +1,4 @@
-permalink: /:categories/:title.html
+permalink: /:categories/:title
 auto: true
 pygments: true
 var:
