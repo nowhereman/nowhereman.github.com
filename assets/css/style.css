@@ -40,7 +40,7 @@ ul li a.active, ol li a.active {
 .container-fluid > .sidebar {
   position:fixed;
   left:0;
-  width: 220px;
+  width: 170px;
 	height:100%;
   padding:0 10px 20px 40px;
   background:#f4f4f4;
@@ -50,7 +50,7 @@ ul li a.active, ol li a.active {
 
 .container-fluid > .content {
   
-  margin-left: 360px;
+  margin-left: 305px;
 }
 #main-content {
   padding-bottom:50px;
