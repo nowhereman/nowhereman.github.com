@@ -5,7 +5,10 @@ layout: default
 <h1 class="title">{{ page.title }}</h1>
 
 {{ content }}
-
+  
+<a href="{{ page.url }}#disqus_thread">View Comments</a>
+<div id="disqus_thread"></div>
+<script type="text/javascript" src="http://disqus.com/forums/nowheremanblog/embed.js"></script>
 {% if page.previous %}
 	{% if page.categories == page.previous.categories %}
 <h2>Next Steps</h2>
