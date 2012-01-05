@@ -2,7 +2,7 @@
 layout: page
 title: Pages 
 header: Pages
-group: example-page
+group: navigation
 ---
 
 <h2>All Pages</h2>
@@ -15,9 +15,9 @@ group: example-page
 {% assign group = 'project' %}
 {% include helpers/pages_list.html %}
 
-<h2>Pages in group: example-page</h2>
+<h2>Pages in group: navigation</h2>
 {% assign pages_list = site.pages %}
-{% assign group = 'example-page' %}
+{% assign group = 'navigation' %}
 {% include helpers/pages_list.html %}
 
 <br/>
