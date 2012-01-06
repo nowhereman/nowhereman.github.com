@@ -70,7 +70,7 @@ Then run this one:
 
 ##Config Rails in thread safe mode
 
-In your RAILS_ROOT, open the file `config\environments\production.rb` and uncomment this line:
+In your RAILS_ROOT, open the file `config/environments/production.rb` and uncomment this line:
 `# config.threadsafe!`
 
 Then add those lines to ensure you can use rake tasks in production env:
@@ -80,7 +80,7 @@ Then add those lines to ensure you can use rake tasks in production env:
   config.dependency_loading = true if $rails_rake_task
 {% endhighlight %}
 
-Finally in your RAILS_ROOT open the file `config\warble.rb`
+Finally in your RAILS_ROOT open the file `config/warble.rb`
 And replace these 2 lines:
 
 {% highlight ruby %}
@@ -104,7 +104,7 @@ bundle exec rake db:create RAILS_ENV=production
 bundle exec rake db:migrate RAILS_ENV=production
 {% endhighlight %}
 
-In your Apache Tomcat directory, open the file `conf\context.xml`.
+In your Apache Tomcat directory, open the file `conf/context.xml`.
 
 Add the **Resource** tag inside the **Context** tag, like this:
 
@@ -124,7 +124,7 @@ Copy your JDBC driver into the Apache Tomcat `lib` folder.
 For [Ubuntu](http://ubuntu.com):
 `sudo cp ~/.rvm/gems/jruby-1.6.5/gems/jdbc-postgres-9.*/lib/*.jar /usr/share/tomcat6/lib`
 
-In your RAILS_ROOT open the file `config\database.yml`.
+In your RAILS_ROOT open the file `config/database.yml`.
 
 Rename the `production` entry in `production_jdbc` and add this one:
 
@@ -138,7 +138,7 @@ production:
   pool: 5
 {% endhighlight %}
 
-In your RAILS_ROOT open the file `config\warble.rb`.
+In your RAILS_ROOT open the file `config/warble.rb`.
 
 And replace this line:
 `# config.webxml.jndi = 'jdbc/rails'`
